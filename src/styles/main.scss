@@ -1,0 +1,58 @@
+@use 'header';
+@use 'about';
+@use 'characteres';
+@use 'watch';
+@use 'newsletter';
+@use 'footer';
+@use 'variables';
+@use 'similar-movies';
+@use 'mixins' as mixin;
+
+
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "futura", sans-serif;
+    background-color: variables.$bcgColor;
+}
+
+.text {
+    @include mixin.text();
+    color: variables.$txtColor;
+    margin-bottom: 15px;
+}
+
+.text--medium {
+    @include mixin.text(20px);
+    color: #444444;
+}
+
+.title {
+    @include mixin.title();
+    color: variables.$titleColor;
+    font-weight: 700;
+    margin-bottom: 48px;
+}
+
+.title--small {
+    @include mixin.text(24px, #d32f2f);
+    margin-bottom: 10px;
+}
+
+.title--big {
+    @include mixin.title();
+    font-size: 96px;
+    color: variables.$secTxtColor;
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+.subtitle {
+    @include mixin.text(22px);
+    margin-top: 10px;
+}

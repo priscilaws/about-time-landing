@@ -1,0 +1,15 @@
+@use 'variables' as colors;
+
+@mixin text($fontSize: 18px, $color: inherit) {
+    font-size: $fontSize;
+    line-height: 1.5;
+    color: $color;
+
+    // outline: 2px solid blue;
+}
+
+@mixin title() {
+    @include text(36px, colors.$titleColor);
+    font-weight: 700;
+    text-transform: uppercase;
+}

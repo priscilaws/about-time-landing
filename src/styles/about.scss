@@ -1,0 +1,41 @@
+@use 'mixins' as mixins;
+@use 'variables';
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+    background: variables.$bcgColor;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+    &__content {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .quote {
+        padding: 24px;
+        text-align: center;
+
+        &__text {
+            font-family: "Playfair Display", serif;
+            font-size: 24px;
+            color: #444444;
+            margin-top: 48px;
+        }
+    }
+}

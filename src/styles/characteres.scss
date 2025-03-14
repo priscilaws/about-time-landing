@@ -1,0 +1,65 @@
+@use 'variables';
+
+.characters {
+    text-align: center;
+    padding: 50px 15px;
+    background: #fdf3f3;
+    border-radius: 12px;
+
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 24px;
+        justify-content: center;
+    }
+
+    &__item {
+        background: white;
+        padding: 20px;
+        border-radius: 12px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+
+        &:hover {
+            transform: translateY(-5px);
+        }
+    }
+
+    &__image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: 16px;
+    }
+
+    &__name {
+        font-size: 22px;
+        font-weight: bold;
+        margin-top: 10px;
+        color: #333;
+    }
+
+    p {
+        max-width: 250px;
+        margin: 10px auto;
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.characters {
+    animation: fadeIn 0.8s ease-in-out;
+}
