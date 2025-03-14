@@ -55,4 +55,5 @@ body {
 .subtitle {
     @include mixin.text(22px);
     margin-top: 10px;
+    margin-bottom: 24px;
 }

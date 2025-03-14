@@ -3,7 +3,7 @@
 .characters {
     text-align: center;
     padding: 50px 15px;
-    background: #fdf3f3;
+    background: variables.$bcgColor;
     border-radius: 12px;
 
     &__list {
@@ -14,7 +14,7 @@
     }
 
     &__item {
-        background: white;
+        background: variables.$secTxtColor;
         padding: 20px;
         border-radius: 12px;
         text-align: center;
@@ -38,7 +38,7 @@
         font-size: 22px;
         font-weight: bold;
         margin-top: 10px;
-        color: #333;
+        color: variables.$txtColor;
     }
 
     p {
