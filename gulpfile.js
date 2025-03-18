@@ -31,7 +31,7 @@ function watchFiles() {
 }
 
 // Default task runs both styles and images
-exports.default = gulp.parallel(styles, images, scripts, watchFiles);
+exports.default = gulp.parallel(styles, images, scripts);
 exports.watch = watchFiles;
 exports.styles = styles;
 exports.images = images;
