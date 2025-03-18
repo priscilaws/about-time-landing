@@ -1,13 +1,9 @@
 @use 'variables';
 
 .footer {
-    background: #d32f2f;
+    background: variables.$titleColor;
     text-align: center;
     padding: 20px;
     color: variables.$secTxtColor;
     margin-top: 24px;
-
-    &__text {
-        font-size: 14px;
-    }
 }
